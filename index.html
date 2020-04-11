@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Build For SDG</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="header-logo">
+          <h1>build for sdg</h1>
+          <div class="head-img">
+            <div class="m-image">
+              <img src="./images/sdgimage.png" alt="sdg" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="main">
+        <section>
+          <form id="estimator-form">
+            <div class="heading">
+              <h1>covid-19 Estimator</h1>
+            </div>
+            <div class="input-wrapper">
+              <label for="population">name</label>
+              <input
+                type="text"
+                placeholder="ex Africa"
+                name="data-name"
+                id="data-name"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">average age</label>
+              <input
+                type="number"
+                placeholder="ex 57"
+                name="data-average-age"
+                id="data-average-age"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">average daily income</label>
+              <input
+                type="number"
+                placeholder="ex $5"
+                name="data-average-daily-income"
+                id="data-average-daily-income"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">average daily income population</label>
+              <input
+                type="number"
+                placeholder="ex 0.17"
+                name="data-average-daily-income-population"
+                id="data-average-daily-income-population"
+                step="0.17"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">Population</label>
+              <input
+                type="number"
+                placeholder="ex 100000"
+                name="data-population"
+                id="data-population"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">Time to Elapse</label>
+              <input
+                type="number"
+                placeholder="ex 30"
+                name="data-time-to-elapse"
+                id="data-time-to-elapse"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">Reported Cases</label>
+              <input
+                type="number"
+                name="data-reported-cases"
+                id="data-reported-cases"
+                placeholder="ex 54"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="population">total hospital bed</label>
+              <input
+                type="number"
+                name="data-total-hospital-bed"
+                id="data-total-hospital-bed"
+                placeholder="ex 10000"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="period Type">period type</label>
+              <select name="data-period-type" id="data-period-type" required>
+                <option value="days">days</option>
+                <option value="weeks">weeks</option>
+                <option value="month">month</option>
+              </select>
+            </div>
+
+            <button type="submit" id="data-go-estimate">estimate impact</button>
+          </form>
+        </section>
+      </div>
+
+      <footer>
+        <div class="footer-main">&copy 2020 <span>Build for SDG</span></div>
+      </footer>
+    </div>
+    <script src="../estimator.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
