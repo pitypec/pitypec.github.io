@@ -1,5 +1,3 @@
-import covid19ImpactEstimator from './estimator';
-
 const form = document.forms['estimator-form'];
 
 form.addEventListener('submit', (e) => {
@@ -20,7 +18,7 @@ form.addEventListener('submit', (e) => {
   const totalHospitalBed = form.querySelector(
     'input[name="data-total-hospital-bed"]'
   ).value;
-  const periodTypes = form.querySelector('#data-period-type');
+  const periodTypes = form.querySelector('#period-type');
   const periodType = periodTypes.options[periodTypes.selectedIndex].text;
 
   const data = {
@@ -32,7 +30,6 @@ form.addEventListener('submit', (e) => {
     timeToElapse,
     reportedCases,
     totalHospitalBed,
-    periodType
+    periodType,
   };
-  covid19ImpactEstimator(data);
 });

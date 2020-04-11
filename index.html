@@ -25,39 +25,41 @@
               <h1>covid-19 Estimator</h1>
             </div>
             <div class="input-wrapper">
-              <label for="population">name</label>
+              <label for="name">name</label>
               <input
                 type="text"
                 placeholder="ex Africa"
                 name="data-name"
-                id="data-name"
+                id="name"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">average age</label>
+              <label for="average-age">average age</label>
               <input
                 type="number"
                 placeholder="ex 57"
                 name="data-average-age"
-                id="data-average-age"
+                id="average-age"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">average daily income</label>
+              <label for="average-daily-income">average daily income</label>
               <input
                 type="number"
                 placeholder="ex $5"
                 name="data-average-daily-income"
-                id="data-average-daily-income"
+                id="average-daily-income"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">average daily income population</label>
+              <label for="average-daily-income-population"
+                >average daily income population</label
+              >
               <input
                 type="number"
                 placeholder="ex 0.17"
                 name="data-average-daily-income-population"
-                id="data-average-daily-income-population"
+                id="average-daily-income-population"
                 step="0.17"
               />
             </div>
@@ -67,45 +69,44 @@
                 type="number"
                 placeholder="ex 100000"
                 name="data-population"
-                id="data-population"
+                id="population"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">Time to Elapse</label>
+              <label for="time-to-elapse">Time to Elapse</label>
               <input
                 type="number"
                 placeholder="ex 30"
                 name="data-time-to-elapse"
-                id="data-time-to-elapse"
+                id="time-to-elapse"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">Reported Cases</label>
+              <label for="reported-cases">Reported Cases</label>
               <input
                 type="number"
                 name="data-reported-cases"
-                id="data-reported-cases"
+                id="reported-cases"
                 placeholder="ex 54"
               />
             </div>
             <div class="input-wrapper">
-              <label for="population">total hospital bed</label>
+              <label for="total-hospital-bed">total hospital bed</label>
               <input
                 type="number"
                 name="data-total-hospital-bed"
-                id="data-total-hospital-bed"
+                id="total-hospital-bed"
                 placeholder="ex 10000"
               />
             </div>
             <div class="input-wrapper">
-              <label for="period Type">period type</label>
-              <select name="data-period-type" id="data-period-type" required>
+              <label for="period-type">period type</label>
+              <select name="data-period-type" id="period-type" required>
                 <option value="days">days</option>
                 <option value="weeks">weeks</option>
                 <option value="month">month</option>
               </select>
             </div>
-
             <button type="submit" id="data-go-estimate">estimate impact</button>
           </form>
         </section>
@@ -115,7 +116,6 @@
         <div class="footer-main">&copy 2020 <span>Build for SDG</span></div>
       </footer>
     </div>
-    <script src="../estimator.js"></script>
     <script src="../index.js"></script>
   </body>
 </html>
