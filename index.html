@@ -95,7 +95,7 @@
                 name="data-reported-cases"
                 id="reported-cases"
                 placeholder="ex 54"
-                data-total-hospital-bed
+                data-reported-cases
               />
             </div>
             <div class="input-wrapper">
@@ -105,15 +105,17 @@
                 name="data-total-hospital-bed"
                 id="total-hospital-bed"
                 placeholder="ex 10000"
+                data-total-hospital-beds
               />
             </div>
             <div class="input-wrapper">
               <label for="period-type">period type</label>
-              <select name="data-period-type" id="period-type" data-period-type>
+              <input list="period-type" data-period-type/>
+              <datalist name="data-period-type" id="period-type" data-period-type>
                 <option value="days">days</option>
                 <option value="weeks">weeks</option>
                 <option value="month">month</option>
-              </select>
+              </datalist>
             </div>
             <button type="submit" id="data-go-estimate" data-go-estimate>estimate impact</button>
           </form>
