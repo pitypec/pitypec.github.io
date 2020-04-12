@@ -100,12 +100,12 @@ footer {
 @media screen and (max-width: 402px) {
   .header-logo h1 {
     text-transform: capitalize;
-    font-size: 0.8em;
+    font-size: 0.6em;
     flex-grow: 1;
     text-align: end;
   }
   .head-img img {
-    margin-top: 35px;
+    margin-top: 25px;
     /* float: left; */
     align-self: flex-start;
   }
