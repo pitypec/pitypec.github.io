@@ -98,6 +98,11 @@ footer {
   visibility: collapse;
 }
 @media screen and (max-width: 402px) {
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
   .header-logo h1 {
     text-transform: capitalize;
     font-size: 0.6em;
