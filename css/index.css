@@ -29,7 +29,6 @@ header {
   align-self: start;
 }
 .head-img img {
-  width: 50px;
   margin-top: 50px;
   /* float: left; */
   align-self: flex-start;
@@ -154,7 +153,6 @@ footer {
   }
 
   .head-img img {
-    width: 50px;
     margin-top: 68px;
     justify-self: self-end;
     /* align-self: flex-end; */
